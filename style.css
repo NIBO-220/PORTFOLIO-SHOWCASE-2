@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+main {
+   padding: 150px 20px 20px; /* 👈 This line creates space below the fixed header */
+
+
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.search-section button {
+  padding: 8px 14px;
+  background: #00b894;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.map {
+  height: 300px;
+  margin-bottom: 20px;
+  z-index: 500; /* 👈 Lower than header (z-index: 1000) */
+}
+
+
+
+
+.cards .card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.store-logo {
+  width: 60px;
+  height: 60px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+
+}
+
+#cartBtn {
+  margin-right: 26px;
+}
